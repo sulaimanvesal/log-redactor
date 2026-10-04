@@ -1,0 +1,18 @@
+# Synthetic agent log — every credential here is fake and inert.
+# Generated for the log-redactor demo; do NOT use these values anywhere.
+
+[2026-09-28T16:58:02Z] INFO  agent.runtime: starting run id=run_9f31 (model=gpt-4o)
+[2026-09-28T16:58:03Z] DEBUG agent.tools: registering tool 'fetch_page' schema ok
+[2026-09-28T16:58:04Z] INFO  agent.llm: provider=openai key=sk-9XkL2mQvR7tYwZ1aBcDeFgHiJkLmNoPqRs
+[2026-09-28T16:58:05Z] DEBUG agent.llm: fallback provider=anthropic key=sk-ant-api03-dEf4uLt5wXy6zAb7cD8eF9gH0iJ1kL
+[2026-09-28T16:58:06Z] INFO  agent.tools: calling fetch_page(url=https://example.com/docs)
+[2026-09-28T16:58:09Z] INFO  agent.tools: fetch_page -> 200 in 2.31s (12_480 bytes)
+[2026-09-28T16:58:10Z] DEBUG agent.state: checkpoint saved to s3://agent-checkpoints/run_9f31
+[2026-09-28T16:58:11Z] WARN  agent.s3: using access key AKIAIOSFODNN7EXAMPLE for bucket agent-checkpoints
+[2026-09-28T16:58:12Z] DEBUG agent.config: aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+[2026-09-28T16:58:13Z] INFO  agent.git: pushing memory snapshot with token ghp_9XkL2mQvR7tYwZ1aBcDeFgHiJkLmNoPqRsTu
+[2026-09-28T16:58:14Z] DEBUG agent.notify: slack webhook xoxb-123456789012-AbCdEfGhIjKl ready
+[2026-09-28T16:58:15Z] INFO  agent.auth: service token eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZ2VudCJ9.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c issued
+[2026-09-28T16:58:16Z] DEBUG agent.http: Authorization: Bearer ya29.c.b0AXvQ1aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789
+[2026-09-28T16:58:17Z] ERROR agent.llm: 401 from https://api.openai.com — check key sk-9XkL2mQvR7tYwZ1aBcDeFgHiJkLmNoPqRs
+[2026-09-28T16:58:18Z] INFO  agent.runtime: run id=run_9f31 finished (status=error, turns=4)
